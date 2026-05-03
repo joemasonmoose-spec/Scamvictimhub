@@ -240,8 +240,8 @@ function App(){
     setShowShareMenu(false);
   }
 
-  function goWhatsApp(){window.open(`https://wa.me/?text=${encodeURIComponent(ui.shareText+" https://scamvictimhub.com")},"_blank");setShowShareMenu(false);}
-  function goEmail(){window.open(`mailto:?subject=${encodeURIComponent("ScamVictimHub Recovery Plan")}&body=${encodeURIComponent(buildText())},"_blank");setShowShareMenu(false);}
+  function goWhatsApp(){window.open("https://wa.me/?text="+encodeURIComponent(ui.shareText+" https://scamvictimhub.com"),"_blank");setShowShareMenu(false);}
+  function goEmail(){window.open("mailto:?subject="+encodeURIComponent("ScamVictimHub Recovery Plan")+"&body="+encodeURIComponent(buildText()),"_blank");setShowShareMenu(false);}
 
   function selectOption(value){
     const updated={...answers,[STEPS[step].id]:value};
